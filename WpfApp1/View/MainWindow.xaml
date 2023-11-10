@@ -5,8 +5,148 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" WindowStartupLocation="CenterScreen" WindowStyle ="None" ResizeMode="NoResize" Background="Transparent" AllowsTransparency="True" Height="740" Width="1220">
+    
+    <Window.Resources>
+        <!--// for mouse //-->
+        <Style TargetType="Border" x:Key="back_Text">
+            <Setter Property="Background" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+        
+    </Window.Resources>
+    
     <Grid>
+        <!--// Background //-->
+        <Border Background="#1C1D31"
+                CornerRadius="25" />
 
+        <!--// Main Grid //-->
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="27*"/>
+                <RowDefinition Height="85*"/>
+                <RowDefinition Height="396*"/>
+                <RowDefinition Height="232*"/>
+            </Grid.RowDefinitions>
+
+            <!--// Head Bar //-->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="79*"/>
+                    <ColumnDefinition Width="138*"/>
+                    <ColumnDefinition Width="178*"/>
+                    <ColumnDefinition Width="276*"/>
+                    <ColumnDefinition Width="140*"/>
+                    <ColumnDefinition Width="205*"/>
+                    <ColumnDefinition Width="204*"/>
+                </Grid.ColumnDefinitions>
+
+                <Viewbox Stretch="Uniform" Grid.Column="1">
+                    <Image x:Name="logo" Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\New_Logo.png" Width="752"/>
+                </Viewbox>
+
+                <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,0,0" Grid.Column="2">
+                    <Viewbox Stretch="Uniform">
+                        <TextBlock x:Name="about_us" Text="ABOUT US" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="10,0,10,0" />
+                    </Viewbox>
+                </Border>
+
+                <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,3,0" Grid.Column="4">
+                    <Viewbox Stretch="Uniform">
+                        <TextBlock x:Name="add_new" Text="ADD NEW" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="3,0,3,0" FontSize="11" />
+                    </Viewbox>
+                </Border>
+
+                <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,0,0" Grid.Column="5">
+                    <Viewbox Stretch="Uniform">
+                        <TextBlock x:Name="my_account" Text="MY ACCOUNT" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="7,0,5,0" />
+                    </Viewbox>
+                </Border>
+
+                <Viewbox Stretch="Uniform" Grid.Column="6" >
+                    <Image x:Name="logo_university" Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\upce_logo.png"/>
+                </Viewbox>
+
+            </Grid>
+
+            <!--// Middle Bar//-->
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!--// 1 unit //-->
+                <Border Style="{StaticResource back_Text}" Grid.Column="1" x:Name="materials" CornerRadius="20" Margin="50,100,50,50">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="149*"/>
+                            <RowDefinition Height="29*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Viewbox Stretch="Uniform" Grid.Row="0" Margin="20,30,20,30">
+                            <Image Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\MATERIALS.png"/>
+                        </Viewbox>
+
+                        <Viewbox Stretch="Uniform" Grid.Row="1">
+                            <TextBlock Text="MATERIALS" Foreground="#9CAAD3"  FontFamily="PT Mono"/>
+                        </Viewbox>
+                    </Grid>
+                </Border>
+                
+                <!--// 2 unit //-->
+                <Border Style="{StaticResource back_Text}" Grid.Column="2" x:Name="services" CornerRadius="20" Margin="50,100,50,50">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="149*"/>
+                            <RowDefinition Height="29*"/>
+                        </Grid.RowDefinitions>
+
+                        <Viewbox Stretch="Uniform" Grid.Row="0" Margin="20,30,20,30">
+                            <Image Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\SERVICES.png"/>
+                        </Viewbox>
+
+                        <Viewbox Stretch="Uniform" Grid.Row="1">
+                            <TextBlock Text="SERVICES" Foreground="#9CAAD3"  FontFamily="PT Mono"/>
+                        </Viewbox>
+                    </Grid>
+                </Border>
+
+            </Grid>
+            
+            <!--// Down Text //-->
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="47*"/>
+                    <RowDefinition Height="128*"/>
+                    <RowDefinition Height="36*"/>
+                    <RowDefinition Height="21*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="SUPPORT THE CHARITY" Foreground="#3B69E9"  FontFamily="PT Mono" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <!--// Down Middle Text//-->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="7*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="1" Text="    EDUCATIONAL MATERIALS&#x0a;AT AN AFFORDABLE PRICE IPSUM" Foreground="#3B69E9"  FontFamily="PT Mono" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBlock Grid.Column="3" Text="GET HELP WITH YOUR STUDIES&#x0a;    OR BECOME A MENTOR" Foreground="#3B69E9"  FontFamily="PT Mono" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

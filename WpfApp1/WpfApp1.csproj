@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="MainWin_Resourse_Imag\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MainWin_Resourse_Imag\" />
     <Folder Include="ModelView\" />
   </ItemGroup>
 
