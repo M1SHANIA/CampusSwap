@@ -26,7 +26,7 @@ namespace WpfApp1.Model
         public string? Image_item { get; set; }
 
         public DateTime Date_posted_item { get; set; }
-        public string FormattedDate_Posted => Date_posted_item.ToString("dddd, dd MMMM yyyy");
+       
 
     }
 }
