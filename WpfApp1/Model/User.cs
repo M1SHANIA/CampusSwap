@@ -21,7 +21,7 @@ namespace WpfApp1.Model
 
         public DateTime User_joined {  get; set; }
 
-       
+        public string user_type { get; set; }
     
         internal class Reciever
         {

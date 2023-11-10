@@ -20,6 +20,8 @@ namespace WpfApp1.Model
 
         
         public DateTime Date_completed { get; set;}
+
+        public string transaction_type {  get; set; }
         
 
         internal class Transaction_item
