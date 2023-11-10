@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace WpfApp1.Model
 {
-   public class Transaction
+    public class Transaction
     {
         public int Id_transaction { get; set; }
 
-        public int Id_sender {  get; set; }
+        public int Id_sender { get; set; }
 
-        public int Id_reciever { get; set;}
+        public int Id_reciever { get; set; }
 
-        public bool status {  get; set; }
+        public bool Status { get; set; }
 
         public DateTime Date_initiated { get; set; }
 
+        
         public DateTime Date_completed { get; set;}
+        
 
         internal class Transaction_item
         {

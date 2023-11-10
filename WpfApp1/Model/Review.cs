@@ -20,7 +20,7 @@ namespace WpfApp1.Model
 
         public DateTime Date_posted_review {get; set; }
 
-        public string FormattedDate => Date_posted_review.ToString("dddd, dd MMMM yyyy");
+        
 
 
 
