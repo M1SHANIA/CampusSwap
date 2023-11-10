@@ -49,7 +49,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Viewbox Stretch="Uniform" Grid.Column="1">
-                    <Image x:Name="logo" Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\New_Logo.png" Width="752"/>
+                    <Image x:Name="logo" Source="/MainWin_Resourse_Imag/New_Logo.png" Width="752"/>
                 </Viewbox>
 
                 <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,0,0" Grid.Column="2">
@@ -71,7 +71,7 @@
                 </Border>
 
                 <Viewbox Stretch="Uniform" Grid.Column="6" >
-                    <Image x:Name="logo_university" Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\upce_logo.png"/>
+                    <Image x:Name="logo_university" Source="/MainWin_Resourse_Imag/upce_logo.png" />
                 </Viewbox>
 
             </Grid>
@@ -94,7 +94,7 @@
                         </Grid.RowDefinitions>
                         
                         <Viewbox Stretch="Uniform" Grid.Row="0" Margin="20,30,20,30">
-                            <Image Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\MATERIALS.png"/>
+                            <Image Source="/MainWin_Resourse_Imag/MATERIALS.png"/>
                         </Viewbox>
 
                         <Viewbox Stretch="Uniform" Grid.Row="1">
@@ -112,7 +112,7 @@
                         </Grid.RowDefinitions>
 
                         <Viewbox Stretch="Uniform" Grid.Row="0" Margin="20,30,20,30">
-                            <Image Source="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\MainWin_Resourse_Imag\SERVICES.png"/>
+                            <Image Source="/MainWin_Resourse_Imag/SERVICES.png"/>
                         </Viewbox>
 
                         <Viewbox Stretch="Uniform" Grid.Row="1">
