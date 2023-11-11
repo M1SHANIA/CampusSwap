@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="HomeUser_Resourse_Imag\AccIMAGE.png" />
+    <None Remove="HomeUser_Resourse_Imag\MentoringSample.png" />
     <None Remove="HomeUser_Resourse_Imag\Wallet.png" />
     <None Remove="MainWin_Resourse_Imag\Logo.png" />
     <None Remove="MainWin_Resourse_Imag\MATERIALS.png" />
@@ -23,6 +24,7 @@
 
   <ItemGroup>
     <Resource Include="HomeUser_Resourse_Imag\AccIMAGE.png" />
+    <Resource Include="HomeUser_Resourse_Imag\MentoringSample.png" />
     <Resource Include="HomeUser_Resourse_Imag\Wallet.png" />
     <Resource Include="MainWin_Resourse_Imag\MATERIALS.png" />
     <Resource Include="MainWin_Resourse_Imag\New_Logo.png" />
