@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp1.View
 {
     /// <summary>
-    /// Логика взаимодействия для home_user.xaml
+    /// Логика взаимодействия для add_new_Servies.xaml
     /// </summary>
-    public partial class home_user : Window
+    public partial class add_new_Servies : Window
     {
-        public home_user()
+        public add_new_Servies()
         {
             InitializeComponent();
         }

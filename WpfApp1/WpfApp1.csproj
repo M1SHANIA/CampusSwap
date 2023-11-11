@@ -30,12 +30,4 @@
     <Resource Include="MainWin_Resourse_Imag\upce_logo.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\42070\Source\Repos\CampusSwap\WpfApp1\.editorconfig" />
-  </ItemGroup>
-
 </Project>
