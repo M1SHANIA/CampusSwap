@@ -7,26 +7,13 @@ using System.ComponentModel;
 
 namespace WpfApp1.Model
 {
-   public  class Item:INotifyPropertyChanged
+    public class Item
     {
-        public int Id_item { get; set; }
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-
-        public int Owner_id { get; set; }
-
-        public string? Category_id {  get; set; }
-
-        public string? Title_item { get; set; }
-
-        public string? Description_item { get; set;}
-
-        public bool Aviability_item {  get; set; }
-
-        public string? Image_item { get; set; }
-
-        public DateTime Date_posted_item { get; set; }
-       
-
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public double Price { get; set; }
+        public string? Description { get; set; }
+        
     }
 }
+

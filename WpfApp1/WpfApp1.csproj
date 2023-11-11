@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="HomeUser_Resourse_Imag\AccIMAGE.png" />
     <Resource Include="HomeUser_Resourse_Imag\MentoringSample.png" />
     <Resource Include="HomeUser_Resourse_Imag\Wallet.png" />

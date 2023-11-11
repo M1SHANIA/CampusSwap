@@ -8,17 +8,11 @@ namespace WpfApp1.Model
 {
     public class Service
     {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public double Price { get; set; }
+        public string? Description { get; set; }
+        public string? Type {  get; set; }
 
-        public int Id_service {  get; set; }
-
-        public int Id_provider {  get; set; }
-        
-        public string? Title_service {  get; set; }
-
-        public string? Description_service { get;set; }
-
-        public DateTime Date_posted_service { get; set; }
-
-        public bool Status_service {  get; set; }   
     }
 }

@@ -8,29 +8,10 @@ namespace WpfApp1.Model
 {
     public class User
     {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
+        public string? Email { get; set; }
 
-        public int Id_user { get; set; }
-
-        public string? Email {  get; set; } 
-
-        public string? User_name { get; set; }
-
-        public string? University { get; set; }
-
-        public double Rating {  get; set; } 
-
-        public DateTime User_joined {  get; set; }
-
-        public string user_type { get; set; }
-    
-        internal class Reciever
-        {
-
-        }
-
-        internal class Sender
-        {
-
-        }
     }
 }
