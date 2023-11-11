@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="HomeUser_Resourse_Imag\AccIMAGE.png" />
+    <None Remove="HomeUser_Resourse_Imag\Wallet.png" />
     <None Remove="MainWin_Resourse_Imag\Logo.png" />
     <None Remove="MainWin_Resourse_Imag\MATERIALS.png" />
     <None Remove="MainWin_Resourse_Imag\New_Logo.png" />
@@ -20,6 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="HomeUser_Resourse_Imag\AccIMAGE.png" />
+    <Resource Include="HomeUser_Resourse_Imag\Wallet.png" />
     <Resource Include="MainWin_Resourse_Imag\MATERIALS.png" />
     <Resource Include="MainWin_Resourse_Imag\New_Logo.png" />
     <Resource Include="MainWin_Resourse_Imag\SERVICES.png" />
