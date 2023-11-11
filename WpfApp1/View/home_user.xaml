@@ -54,19 +54,19 @@
 
                 <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,0,0" Grid.Column="2">
                     <Viewbox Stretch="Uniform">
-                        <TextBlock x:Name="about_us" Text="ABOUT US" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="10,0,10,0" />
+                        <Button x:Name="about_us" Content="ABOUT US" BorderBrush="Transparent" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="10,0,10,0" />
                     </Viewbox>
                 </Border>
 
                 <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,3,0" Grid.Column="4">
                     <Viewbox Stretch="Uniform">
-                        <TextBlock x:Name="add_new" Text="ADD NEW" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="3,0,3,0" FontSize="11" />
+                        <Button x:Name="add_new" Content = "ADD NEW" BorderBrush="Transparent" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="3,0,3,0" FontSize="11" />
                     </Viewbox>
                 </Border>
 
                 <Border Style="{StaticResource back_Text}" CornerRadius="20" Margin="3,0,0,0" Grid.Column="5">
                     <Viewbox Stretch="Uniform">
-                        <TextBlock x:Name="my_account" Text="MY ACCOUNT" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="7,0,5,0" />
+                        <Button x:Name="my_account" Content="MY ACCOUNT" BorderBrush="Transparent" Background="Transparent" Foreground="#9CAAD3" FontFamily="PT Mono" Margin="7,0,5,0" />
                     </Viewbox>
                 </Border>
 
@@ -83,30 +83,15 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
 
-                <!--// 4 unit //-->
-                <Border Style="{StaticResource back_Text}" Grid.Column="4" x:Name="history_payments" CornerRadius="20" Margin="50,100,50,50">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="149*"/>
-                            <RowDefinition Height="29*"/>
-                        </Grid.RowDefinitions>
-
-                        <Viewbox Stretch="Uniform" Grid.Row="0" Margin="20,30,20,30">
-                            <Image Source="/HomeUser_Resourse_Imag/Wallet.png"/>
-                        </Viewbox>
-
-                        <Viewbox Stretch="Uniform" Grid.Row="1">
-                            <TextBlock Text="MY PAYMENTS" Foreground="#9CAAD3"  FontFamily="PT Mono"/>
-                        </Viewbox>
-                    </Grid>
-                </Border>
 
                 <!--// 1 unit //-->
                 <Border Style="{StaticResource back_Text}" Grid.Column="1" x:Name="user_profil" CornerRadius="20" Margin="50,100,50,50">
+                    <Border.InputBindings>
+                        <MouseBinding MouseAction="LeftClick" Command="{Binding YourCommand}"/>
+                    </Border.InputBindings>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="149*"/>
@@ -125,6 +110,9 @@
 
                 <!--// 2 unit //-->
                 <Border Style="{StaticResource back_Text}" Grid.Column="2" x:Name="materials" CornerRadius="20" Margin="50,100,50,50">
+                    <Border.InputBindings>
+                        <MouseBinding MouseAction="LeftClick" Command="{Binding YourCommand}"/>
+                    </Border.InputBindings>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="149*"/>
@@ -143,6 +131,9 @@
 
                 <!--// 3 unit //-->
                 <Border Style="{StaticResource back_Text}" Grid.Column="3" x:Name="services" CornerRadius="20" Margin="50,100,50,50">
+                    <Border.InputBindings>
+                        <MouseBinding MouseAction="LeftClick" Command="{Binding YourCommand}"/>
+                    </Border.InputBindings>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="149*"/>

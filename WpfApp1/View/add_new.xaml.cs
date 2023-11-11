@@ -15,17 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp1.View
 {
     /// <summary>
-    /// Логика взаимодействия для home_user.xaml
+    /// Логика взаимодействия для add_new.xaml
     /// </summary>
-    
-    private void aboutUs_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    public partial class add_new : Window
     {
-
-    }
-
-    public partial class home_user : Window
-    {
-        public home_user()
+        public add_new()
         {
             InitializeComponent();
         }
