@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1.View"
         mc:Ignorable="d"
         Title="MainWindow" WindowStartupLocation="CenterScreen" WindowStyle ="None" ResizeMode="NoResize" Background="Transparent" AllowsTransparency="True" Height="740" Width="1220">
-    
+
     <Window.Resources>
         <!--// for mouse //-->
         <Style TargetType="Border" x:Key="back_Text">
@@ -17,10 +17,10 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
-        
+
+
     </Window.Resources>
-    
+
     <Grid>
         <!--// Background //-->
         <Border Background="#1C1D31"
@@ -84,7 +84,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <!--// 1 unit //-->
                 <Border Style="{StaticResource back_Text}" Grid.Column="1" x:Name="materials" CornerRadius="20" Margin="50,100,50,50">
                     <Grid>
@@ -92,7 +92,7 @@
                             <RowDefinition Height="149*"/>
                             <RowDefinition Height="29*"/>
                         </Grid.RowDefinitions>
-                        
+
                         <Viewbox Stretch="Uniform" Grid.Row="0" Margin="20,30,20,30">
                             <Image Source="/MainWin_Resourse_Imag/MATERIALS.png"/>
                         </Viewbox>
@@ -102,7 +102,7 @@
                         </Viewbox>
                     </Grid>
                 </Border>
-                
+
                 <!--// 2 unit //-->
                 <Border Style="{StaticResource back_Text}" Grid.Column="2" x:Name="services" CornerRadius="20" Margin="50,100,50,50">
                     <Grid>
@@ -122,20 +122,32 @@
                 </Border>
 
             </Grid>
-            
+
             <!--// Down Text //-->
             <Grid Grid.Row="3">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="47*"/>
-                    <RowDefinition Height="128*"/>
-                    <RowDefinition Height="36*"/>
-                    <RowDefinition Height="21*"/>
+                    <RowDefinition Height="57*"/>
+                    <RowDefinition Height="92*"/>
+                    <RowDefinition Height="72*"/>
+                    <RowDefinition Height="11*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="SUPPORT THE CHARITY" Foreground="#3B69E9"  FontFamily="PT Mono" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="ENVIRONMENTAL CARE" Foreground="#3B69E9"  FontFamily="PT Mono" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="14" Width="130"/>
+
+                <!--// Gradient //-->
+                <Border Grid.Row="3" CornerRadius="0,0,20,20">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0.75,0" EndPoint="0,1">
+                            <GradientStop Color="#DF208F" Offset="0.1"/>
+                            <GradientStop Color="#DFCF20" Offset="0.8"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+
+                <TextBlock Text="SUPPORT THE CHARITY" Foreground="#3B69E9"  FontFamily="PT Mono" HorizontalAlignment="Center" VerticalAlignment="Center" Height="12" Width="136"/>
 
                 <!--// Down Middle Text//-->
-                <Grid Grid.Row="1">
+                <Grid Grid.Row="1" Margin="0,0,0,52" Grid.RowSpan="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="7*"/>
                         <ColumnDefinition Width="500"/>

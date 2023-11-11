@@ -9,11 +9,21 @@
 
   <ItemGroup>
     <None Remove="MainWin_Resourse_Imag\Logo.png" />
+    <None Remove="MainWin_Resourse_Imag\MATERIALS.png" />
+    <None Remove="MainWin_Resourse_Imag\New_Logo.png" />
+    <None Remove="MainWin_Resourse_Imag\SERVICES.png" />
+    <None Remove="MainWin_Resourse_Imag\upce_logo.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MainWin_Resourse_Imag\" />
     <Folder Include="ModelView\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MainWin_Resourse_Imag\MATERIALS.png" />
+    <Resource Include="MainWin_Resourse_Imag\New_Logo.png" />
+    <Resource Include="MainWin_Resourse_Imag\SERVICES.png" />
+    <Resource Include="MainWin_Resourse_Imag\upce_logo.png" />
   </ItemGroup>
 
 </Project>
